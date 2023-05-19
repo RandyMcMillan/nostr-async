@@ -23,3 +23,16 @@ scripts/subnote
 
 .DS_Store
 deps/.DS_Store
+
+.vs
+*.filters
+*.user
+Debug
+
+**.DS_Store
+async/.DS_Store
+async/build
+.vscode
+
+async.h.xcodeproj/xcuserdata
+async.h.xcodeproj/project.xcworkspace/xcuserdata

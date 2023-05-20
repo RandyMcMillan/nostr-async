@@ -23,6 +23,7 @@
 		4BDBB9002A185372000FD3C8 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8DF2A1851E6000FD3C8 /* secp256k1_recovery.h */; };
 		4BDBB9012A185372000FD3C8 /* secp256k1_schnorrsig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8E02A1851E6000FD3C8 /* secp256k1_schnorrsig.h */; };
 		4BDBB9212A1856E7000FD3C8 /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */; };
+		4BDBB9B12A1866EE000FD3C8 /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		4BDBB87B2A184C51000FD3C8 /* nostril */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nostril; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libsecp256k1.a; path = "../../../../../../../../../../Volumes/git/nostr-async/libsecp256k1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsecp256k1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1.a; sourceTree = "<group>"; };
 		4BDBB8A92A185073000FD3C8 /* aes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = aes.c; path = ../aes.c; sourceTree = "<group>"; };
 		4BDBB8AA2A185073000FD3C8 /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aes.h; path = ../aes.h; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDBB9B12A1866EE000FD3C8 /* libsecp256k1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +449,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -462,7 +464,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};

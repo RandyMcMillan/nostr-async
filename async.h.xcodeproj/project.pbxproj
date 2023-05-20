@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4B03729A2A182CDD00CBB0A6 /* Build configuration list for PBXProject "nostr-async.h" */;
+			buildConfigurationList = 4B03729A2A182CDD00CBB0A6 /* Build configuration list for PBXProject "async.h" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -285,7 +285,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B03729A2A182CDD00CBB0A6 /* Build configuration list for PBXProject "nostr-async.h" */ = {
+		4B03729A2A182CDD00CBB0A6 /* Build configuration list for PBXProject "async.h" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B0372A42A182CDE00CBB0A6 /* Debug */,

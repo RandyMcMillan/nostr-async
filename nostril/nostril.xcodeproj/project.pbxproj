@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B60905F2A197C9300EE4896 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8AA2A185073000FD3C8 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B6090612A197C9A00EE4896 /* cursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8B52A1850EE000FD3C8 /* cursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B6090632A197C9E00EE4896 /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8B92A1850FA000FD3C8 /* endian.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BAFCA652A19794000C3135E /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8C52A185126000FD3C8 /* random.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BAFCA672A19794B00C3135E /* proof.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8C12A185119000FD3C8 /* proof.h */; };
-		4BAFCA6C2A19798100C3135E /* hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8BD2A185108000FD3C8 /* hex.h */; };
+		4BAFCA672A19794B00C3135E /* proof.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8C12A185119000FD3C8 /* proof.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BAFCA6C2A19798100C3135E /* hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8BD2A185108000FD3C8 /* hex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BDBB8AB2A185073000FD3C8 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8A92A185073000FD3C8 /* aes.c */; };
 		4BDBB8B22A1850D7000FD3C8 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8B12A1850D7000FD3C8 /* base64.c */; };
 		4BDBB8CA2A185135000FD3C8 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8C92A185135000FD3C8 /* sha256.c */; };
@@ -132,9 +135,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BAFCA652A19794000C3135E /* random.h in Headers */,
+				4B60905F2A197C9300EE4896 /* aes.h in Headers */,
+				4B6090612A197C9A00EE4896 /* cursor.h in Headers */,
+				4B6090632A197C9E00EE4896 /* endian.h in Headers */,
 				4BAFCA6C2A19798100C3135E /* hex.h in Headers */,
 				4BAFCA672A19794B00C3135E /* proof.h in Headers */,
+				4BAFCA652A19794000C3135E /* random.h in Headers */,
 				4BDBB8FC2A185372000FD3C8 /* secp256k1.h in Headers */,
 				4BDBB8FD2A185372000FD3C8 /* secp256k1_ecdh.h in Headers */,
 				4BDBB8FE2A185372000FD3C8 /* secp256k1_extrakeys.h in Headers */,

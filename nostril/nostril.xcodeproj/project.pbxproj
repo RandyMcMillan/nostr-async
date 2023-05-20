@@ -51,15 +51,15 @@
 		4BDBB87B2A184C51000FD3C8 /* nostril */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nostril; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsecp256k1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1.a; sourceTree = "<group>"; };
-		4BDBB8A92A185073000FD3C8 /* aes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = aes.c; path = ../aes.c; sourceTree = "<group>"; };
-		4BDBB8AA2A185073000FD3C8 /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aes.h; path = ../aes.h; sourceTree = "<group>"; };
-		4BDBB8B12A1850D7000FD3C8 /* base64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = base64.c; path = ../base64.c; sourceTree = "<group>"; };
-		4BDBB8B52A1850EE000FD3C8 /* cursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cursor.h; path = ../cursor.h; sourceTree = "<group>"; };
-		4BDBB8B92A1850FA000FD3C8 /* endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = endian.h; path = ../endian.h; sourceTree = "<group>"; };
-		4BDBB8BD2A185108000FD3C8 /* hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hex.h; path = ../hex.h; sourceTree = "<group>"; };
-		4BDBB8C12A185119000FD3C8 /* proof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = proof.h; path = ../proof.h; sourceTree = "<group>"; };
-		4BDBB8C52A185126000FD3C8 /* random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = random.h; path = ../random.h; sourceTree = "<group>"; };
-		4BDBB8C92A185135000FD3C8 /* sha256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha256.c; path = ../sha256.c; sourceTree = "<group>"; };
+		4BDBB8A92A185073000FD3C8 /* aes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aes.c; sourceTree = "<group>"; };
+		4BDBB8AA2A185073000FD3C8 /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		4BDBB8B12A1850D7000FD3C8 /* base64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		4BDBB8B52A1850EE000FD3C8 /* cursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cursor.h; sourceTree = "<group>"; };
+		4BDBB8B92A1850FA000FD3C8 /* endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
+		4BDBB8BD2A185108000FD3C8 /* hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hex.h; sourceTree = "<group>"; };
+		4BDBB8C12A185119000FD3C8 /* proof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proof.h; sourceTree = "<group>"; };
+		4BDBB8C52A185126000FD3C8 /* random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		4BDBB8C92A185135000FD3C8 /* sha256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
 		4BDBB8CD2A185146000FD3C8 /* nostril.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nostril.c; sourceTree = SOURCE_ROOT; };
 		4BDBB8DB2A1851E6000FD3C8 /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
 		4BDBB8DC2A1851E6000FD3C8 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				4BDBB8AA2A185073000FD3C8 /* aes.h */,
 				4BDBB8DA2A1851E6000FD3C8 /* include */,
 			);
-			path = nostril;
+			name = nostril;
 			sourceTree = "<group>";
 		};
 		4BDBB8932A184E70000FD3C8 /* Frameworks */ = {
@@ -246,7 +246,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "type -P git && git checkout deps || \\\necho \"install git...\"\nMAKE=$(which make)\nif [ ! -e configurator ]; then \\\n$MAKE configurator; fi\nif [ ! -e libsecp256k1.a ]; then \\\n$MAKE libsecp256k1.a; fi\n";
+			shellScript = "MAKE=$(which make)\n\n#$MAKE clean\n#type -P git && git checkout deps || \\\necho \"install git...\"\n\nif [ ! -e configurator ]; then \\\n$MAKE configurator; fi\nif [ ! -e libsecp256k1.a ]; then \\\n$MAKE libsecp256k1.a; fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -401,6 +401,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -415,6 +416,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -429,7 +431,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 			};
@@ -445,6 +447,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 			};

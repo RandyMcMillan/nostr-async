@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4BDBB9412A185E75000FD3C8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB9402A185E75000FD3C8 /* main.c */; };
+		4BDBB9D22A186884000FD3C8 /* libsecp256k1.a in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB94F2A1861C1000FD3C8 /* libsecp256k1.a */; };
+		4BDBB9D32A186892000FD3C8 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB9C02A1867F7000FD3C8 /* secp256k1.h */; };
+		4BDBB9D52A186897000FD3C8 /* secp256k1_extrakeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB9C22A1867F7000FD3C8 /* secp256k1_extrakeys.h */; };
+		4BDBB9D72A18689A000FD3C8 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB9C42A1867F7000FD3C8 /* secp256k1_recovery.h */; };
+		4BDBB9D92A1868A0000FD3C8 /* secp256k1_schnorrsig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB9C52A1867F7000FD3C8 /* secp256k1_schnorrsig.h */; };
+		4BDBB9DB2A1868A9000FD3C8 /* secp256k1_preallocated.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB9C32A1867F7000FD3C8 /* secp256k1_preallocated.h */; };
+		4BDBB9DD2A1868AE000FD3C8 /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB9C12A1867F7000FD3C8 /* secp256k1_ecdh.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		4BDBB93D2A185E75000FD3C8 /* nostr-async */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "nostr-async"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDBB9402A185E75000FD3C8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4BDBB94F2A1861C1000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libsecp256k1.a; path = ../libsecp256k1.a; sourceTree = SOURCE_ROOT; };
+		4BDBB9C02A1867F7000FD3C8 /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		4BDBB9C12A1867F7000FD3C8 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
+		4BDBB9C22A1867F7000FD3C8 /* secp256k1_extrakeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_extrakeys.h; sourceTree = "<group>"; };
+		4BDBB9C32A1867F7000FD3C8 /* secp256k1_preallocated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_preallocated.h; sourceTree = "<group>"; };
+		4BDBB9C42A1867F7000FD3C8 /* secp256k1_recovery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
+		4BDBB9C52A1867F7000FD3C8 /* secp256k1_schnorrsig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_schnorrsig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +55,10 @@
 		4BDBB9342A185E75000FD3C8 = {
 			isa = PBXGroup;
 			children = (
+				4BDBB9BF2A1867F7000FD3C8 /* include */,
 				4BDBB93F2A185E75000FD3C8 /* nostr-async */,
 				4BDBB93E2A185E75000FD3C8 /* Products */,
+				4BDBB94E2A1861C1000FD3C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +78,52 @@
 			path = "nostr-async";
 			sourceTree = "<group>";
 		};
+		4BDBB94E2A1861C1000FD3C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBB94F2A1861C1000FD3C8 /* libsecp256k1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BDBB9BF2A1867F7000FD3C8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBB9C02A1867F7000FD3C8 /* secp256k1.h */,
+				4BDBB9C12A1867F7000FD3C8 /* secp256k1_ecdh.h */,
+				4BDBB9C22A1867F7000FD3C8 /* secp256k1_extrakeys.h */,
+				4BDBB9C32A1867F7000FD3C8 /* secp256k1_preallocated.h */,
+				4BDBB9C42A1867F7000FD3C8 /* secp256k1_recovery.h */,
+				4BDBB9C52A1867F7000FD3C8 /* secp256k1_schnorrsig.h */,
+			);
+			name = include;
+			path = ../deps/secp256k1/include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BDBB9BE2A1867DC000FD3C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDBB9DD2A1868AE000FD3C8 /* secp256k1_ecdh.h in Headers */,
+				4BDBB9DB2A1868A9000FD3C8 /* secp256k1_preallocated.h in Headers */,
+				4BDBB9D92A1868A0000FD3C8 /* secp256k1_schnorrsig.h in Headers */,
+				4BDBB9D72A18689A000FD3C8 /* secp256k1_recovery.h in Headers */,
+				4BDBB9D52A186897000FD3C8 /* secp256k1_extrakeys.h in Headers */,
+				4BDBB9D32A186892000FD3C8 /* secp256k1.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4BDBB93C2A185E75000FD3C8 /* nostr-async */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BDBB9442A185E75000FD3C8 /* Build configuration list for PBXNativeTarget "nostr-async" */;
 			buildPhases = (
+				4BDBB9BE2A1867DC000FD3C8 /* Headers */,
 				4BDBB9392A185E75000FD3C8 /* Sources */,
 				4BDBB93A2A185E75000FD3C8 /* Frameworks */,
 				4BDBB93B2A185E75000FD3C8 /* CopyFiles */,
@@ -118,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDBB9D22A186884000FD3C8 /* libsecp256k1.a in Sources */,
 				4BDBB9412A185E75000FD3C8 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,9 +295,12 @@
 		4BDBB9452A185E75000FD3C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -252,6 +311,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

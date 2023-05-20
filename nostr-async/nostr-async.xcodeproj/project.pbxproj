@@ -52,7 +52,7 @@
 		4B2F9C1E2A18703400F02A38 /* cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cursor.h; path = ../../../cursor.h; sourceTree = "<group>"; };
 		4B2F9C1F2A18703400F02A38 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = ../../../base64.h; sourceTree = "<group>"; };
 		4B2F9C2F2A18719E00F02A38 /* async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = async.h; path = ../../../../async.h/async/async.h; sourceTree = "<group>"; };
-		4B61D1722A19490600D4D037 /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecp256k1.a; path = ../nostril/libsecp256k1.a; sourceTree = "<group>"; };
+		4B61D1722A19490600D4D037 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libsecp256k1.a; path = ../nostril/libsecp256k1.a; sourceTree = "<group>"; };
 		4BDBB93D2A185E75000FD3C8 /* nostr-async */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "nostr-async"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDBB9402A185E75000FD3C8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4BDBB9C02A1867F7000FD3C8 /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };

@@ -78,13 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BDBB8892A184E22000FD3C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -188,8 +181,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BDBB88C2A184E22000FD3C8 /* Build configuration list for PBXNativeTarget "secp256k1" */;
 			buildPhases = (
-				4BDBB8882A184E22000FD3C8 /* Sources */,
-				4BDBB8892A184E22000FD3C8 /* Frameworks */,
 				4BDBB89B2A184EC7000FD3C8 /* $MAKE libsecp256k1.a
  */,
 			);
@@ -255,7 +246,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "MAKE=$(which make)\n#$MAKE clean\n#$MAKE configure\n$MAKE libsecp256k1.a\n";
+			shellScript = "type -P git && git checkout deps || \\\necho \"install git...\"\nMAKE=$(which make)\nif [ ! -e configurator ]; then \\\n$MAKE configurator; fi\nif [ ! -e libsecp256k1.a ]; then \\\n$MAKE libsecp256k1.a; fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -273,13 +264,6 @@
 				4BDBB8B62A1850EE000FD3C8 /* cursor.h in Sources */,
 				4BDBB8B22A1850D7000FD3C8 /* base64.c in Sources */,
 				4BDBB8AB2A185073000FD3C8 /* aes.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BDBB8882A184E22000FD3C8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

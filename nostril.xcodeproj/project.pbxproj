@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BDBB8AB2A185073000FD3C8 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8A92A185073000FD3C8 /* aes.c */; };
+		4BDBB8B22A1850D7000FD3C8 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8B12A1850D7000FD3C8 /* base64.c */; };
+		4BDBB8B62A1850EE000FD3C8 /* cursor.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8B52A1850EE000FD3C8 /* cursor.h */; };
+		4BDBB8BA2A1850FA000FD3C8 /* endian.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8B92A1850FA000FD3C8 /* endian.h */; };
+		4BDBB8BE2A185108000FD3C8 /* hex.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8BD2A185108000FD3C8 /* hex.h */; };
+		4BDBB8C22A185119000FD3C8 /* proof.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8C12A185119000FD3C8 /* proof.h */; };
+		4BDBB8C62A185126000FD3C8 /* random.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8C52A185126000FD3C8 /* random.h */; };
+		4BDBB8CA2A185135000FD3C8 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8C92A185135000FD3C8 /* sha256.c */; };
+		4BDBB8CE2A185146000FD3C8 /* nostril.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8CD2A185146000FD3C8 /* nostril.c */; };
+		4BDBB8FC2A185372000FD3C8 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8DB2A1851E6000FD3C8 /* secp256k1.h */; };
+		4BDBB8FD2A185372000FD3C8 /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8DC2A1851E6000FD3C8 /* secp256k1_ecdh.h */; };
+		4BDBB8FE2A185372000FD3C8 /* secp256k1_extrakeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8DD2A1851E6000FD3C8 /* secp256k1_extrakeys.h */; };
+		4BDBB8FF2A185372000FD3C8 /* secp256k1_preallocated.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8DE2A1851E6000FD3C8 /* secp256k1_preallocated.h */; };
+		4BDBB9002A185372000FD3C8 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8DF2A1851E6000FD3C8 /* secp256k1_recovery.h */; };
+		4BDBB9012A185372000FD3C8 /* secp256k1_schnorrsig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8E02A1851E6000FD3C8 /* secp256k1_schnorrsig.h */; };
+		4BDBB9212A1856E7000FD3C8 /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BDBB8912A184E3C000FD3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BDBB8732A184C51000FD3C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BDBB88A2A184E22000FD3C8;
+			remoteInfo = secp256k1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BDBB8792A184C51000FD3C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4BDBB87B2A184C51000FD3C8 /* nostril */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nostril; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libsecp256k1.a; path = "../../../../../../../../../../Volumes/git/nostr-async/libsecp256k1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1.a; sourceTree = "<group>"; };
+		4BDBB8A92A185073000FD3C8 /* aes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = aes.c; path = ../aes.c; sourceTree = "<group>"; };
+		4BDBB8AA2A185073000FD3C8 /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aes.h; path = ../aes.h; sourceTree = "<group>"; };
+		4BDBB8B12A1850D7000FD3C8 /* base64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = base64.c; path = ../base64.c; sourceTree = "<group>"; };
+		4BDBB8B52A1850EE000FD3C8 /* cursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cursor.h; path = ../cursor.h; sourceTree = "<group>"; };
+		4BDBB8B92A1850FA000FD3C8 /* endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = endian.h; path = ../endian.h; sourceTree = "<group>"; };
+		4BDBB8BD2A185108000FD3C8 /* hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hex.h; path = ../hex.h; sourceTree = "<group>"; };
+		4BDBB8C12A185119000FD3C8 /* proof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = proof.h; path = ../proof.h; sourceTree = "<group>"; };
+		4BDBB8C52A185126000FD3C8 /* random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = random.h; path = ../random.h; sourceTree = "<group>"; };
+		4BDBB8C92A185135000FD3C8 /* sha256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha256.c; path = ../sha256.c; sourceTree = "<group>"; };
+		4BDBB8CD2A185146000FD3C8 /* nostril.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nostril.c; sourceTree = SOURCE_ROOT; };
+		4BDBB8DB2A1851E6000FD3C8 /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		4BDBB8DC2A1851E6000FD3C8 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
+		4BDBB8DD2A1851E6000FD3C8 /* secp256k1_extrakeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_extrakeys.h; sourceTree = "<group>"; };
+		4BDBB8DE2A1851E6000FD3C8 /* secp256k1_preallocated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_preallocated.h; sourceTree = "<group>"; };
+		4BDBB8DF2A1851E6000FD3C8 /* secp256k1_recovery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
+		4BDBB8E02A1851E6000FD3C8 /* secp256k1_schnorrsig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_schnorrsig.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BDBB8782A184C51000FD3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDBB9212A1856E7000FD3C8 /* libsecp256k1.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BDBB8892A184E22000FD3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BDBB8722A184C51000FD3C8 = {
+			isa = PBXGroup;
+			children = (
+				4BDBB87D2A184C51000FD3C8 /* nostril */,
+				4BDBB87C2A184C51000FD3C8 /* Products */,
+				4BDBB8932A184E70000FD3C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BDBB87C2A184C51000FD3C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBB87B2A184C51000FD3C8 /* nostril */,
+				4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BDBB87D2A184C51000FD3C8 /* nostril */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBB8CD2A185146000FD3C8 /* nostril.c */,
+				4BDBB8C92A185135000FD3C8 /* sha256.c */,
+				4BDBB8C52A185126000FD3C8 /* random.h */,
+				4BDBB8C12A185119000FD3C8 /* proof.h */,
+				4BDBB8BD2A185108000FD3C8 /* hex.h */,
+				4BDBB8B92A1850FA000FD3C8 /* endian.h */,
+				4BDBB8B52A1850EE000FD3C8 /* cursor.h */,
+				4BDBB8B12A1850D7000FD3C8 /* base64.c */,
+				4BDBB8A92A185073000FD3C8 /* aes.c */,
+				4BDBB8AA2A185073000FD3C8 /* aes.h */,
+				4BDBB8DA2A1851E6000FD3C8 /* include */,
+			);
+			path = nostril;
+			sourceTree = "<group>";
+		};
+		4BDBB8932A184E70000FD3C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BDBB8DA2A1851E6000FD3C8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBB8DB2A1851E6000FD3C8 /* secp256k1.h */,
+				4BDBB8DC2A1851E6000FD3C8 /* secp256k1_ecdh.h */,
+				4BDBB8DD2A1851E6000FD3C8 /* secp256k1_extrakeys.h */,
+				4BDBB8DE2A1851E6000FD3C8 /* secp256k1_preallocated.h */,
+				4BDBB8DF2A1851E6000FD3C8 /* secp256k1_recovery.h */,
+				4BDBB8E02A1851E6000FD3C8 /* secp256k1_schnorrsig.h */,
+			);
+			name = include;
+			path = deps/secp256k1/include;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BDBB8FB2A185360000FD3C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDBB8FC2A185372000FD3C8 /* secp256k1.h in Headers */,
+				4BDBB8FD2A185372000FD3C8 /* secp256k1_ecdh.h in Headers */,
+				4BDBB8FE2A185372000FD3C8 /* secp256k1_extrakeys.h in Headers */,
+				4BDBB8FF2A185372000FD3C8 /* secp256k1_preallocated.h in Headers */,
+				4BDBB9002A185372000FD3C8 /* secp256k1_recovery.h in Headers */,
+				4BDBB9012A185372000FD3C8 /* secp256k1_schnorrsig.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4BDBB87A2A184C51000FD3C8 /* nostril */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BDBB8822A184C51000FD3C8 /* Build configuration list for PBXNativeTarget "nostril" */;
+			buildPhases = (
+				4BDBB8FB2A185360000FD3C8 /* Headers */,
+				4BDBB8772A184C51000FD3C8 /* Sources */,
+				4BDBB8782A184C51000FD3C8 /* Frameworks */,
+				4BDBB8792A184C51000FD3C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BDBB8922A184E3C000FD3C8 /* PBXTargetDependency */,
+			);
+			name = nostril;
+			productName = nostril;
+			productReference = 4BDBB87B2A184C51000FD3C8 /* nostril */;
+			productType = "com.apple.product-type.tool";
+		};
+		4BDBB88A2A184E22000FD3C8 /* secp256k1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BDBB88C2A184E22000FD3C8 /* Build configuration list for PBXNativeTarget "secp256k1" */;
+			buildPhases = (
+				4BDBB8882A184E22000FD3C8 /* Sources */,
+				4BDBB8892A184E22000FD3C8 /* Frameworks */,
+				4BDBB89B2A184EC7000FD3C8 /* $MAKE libsecp256k1.a
+ */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secp256k1;
+			productName = secp256k1;
+			productReference = 4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BDBB8732A184C51000FD3C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4BDBB87A2A184C51000FD3C8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4BDBB88A2A184E22000FD3C8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 4BDBB8762A184C51000FD3C8 /* Build configuration list for PBXProject "nostril" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BDBB8722A184C51000FD3C8;
+			productRefGroup = 4BDBB87C2A184C51000FD3C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BDBB87A2A184C51000FD3C8 /* nostril */,
+				4BDBB88A2A184E22000FD3C8 /* secp256k1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BDBB89B2A184EC7000FD3C8 /* $MAKE libsecp256k1.a
+ */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "$MAKE libsecp256k1.a\n";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MAKE=$(which make)\n#$MAKE clean\n#$MAKE configure\n$MAKE libsecp256k1.a\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BDBB8772A184C51000FD3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDBB8CE2A185146000FD3C8 /* nostril.c in Sources */,
+				4BDBB8CA2A185135000FD3C8 /* sha256.c in Sources */,
+				4BDBB8C62A185126000FD3C8 /* random.h in Sources */,
+				4BDBB8C22A185119000FD3C8 /* proof.h in Sources */,
+				4BDBB8BE2A185108000FD3C8 /* hex.h in Sources */,
+				4BDBB8BA2A1850FA000FD3C8 /* endian.h in Sources */,
+				4BDBB8B62A1850EE000FD3C8 /* cursor.h in Sources */,
+				4BDBB8B22A1850D7000FD3C8 /* base64.c in Sources */,
+				4BDBB8AB2A185073000FD3C8 /* aes.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BDBB8882A184E22000FD3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BDBB8922A184E3C000FD3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BDBB88A2A184E22000FD3C8 /* secp256k1 */;
+			targetProxy = 4BDBB8912A184E3C000FD3C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BDBB8802A184C51000FD3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		4BDBB8812A184C51000FD3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4BDBB8832A184C51000FD3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP9MSC9X74;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4BDBB8842A184C51000FD3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP9MSC9X74;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4BDBB88D2A184E22000FD3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP9MSC9X74;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4BDBB88E2A184E22000FD3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP9MSC9X74;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BDBB8762A184C51000FD3C8 /* Build configuration list for PBXProject "nostril" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDBB8802A184C51000FD3C8 /* Debug */,
+				4BDBB8812A184C51000FD3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BDBB8822A184C51000FD3C8 /* Build configuration list for PBXNativeTarget "nostril" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDBB8832A184C51000FD3C8 /* Debug */,
+				4BDBB8842A184C51000FD3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BDBB88C2A184E22000FD3C8 /* Build configuration list for PBXNativeTarget "secp256k1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDBB88D2A184E22000FD3C8 /* Debug */,
+				4BDBB88E2A184E22000FD3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BDBB8732A184C51000FD3C8 /* Project object */;
+}

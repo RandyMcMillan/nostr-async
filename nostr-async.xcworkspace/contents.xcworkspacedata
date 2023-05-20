@@ -5,9 +5,9 @@
       location = "container:nostr-async/nostr-async.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:nostril.xcodeproj">
+      location = "group:nostril/nostril.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:async.h.xcodeproj">
+      location = "group:async.h/async.h.xcodeproj">
    </FileRef>
 </Workspace>

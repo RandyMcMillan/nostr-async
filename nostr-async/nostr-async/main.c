@@ -17,15 +17,15 @@
 #include "secp256k1_ecdh.h"
 #include "secp256k1_schnorrsig.h"
 
-#include "../../cursor.h"
-#include "../../hex.h"
-#include "../../base64.h"
-#include "../../aes.h"
-#include "../../sha256.h"
-#include "../../random.h"
-#include "../../proof.h"
+#include "../../nostril/cursor.h"
+#include "../../nostril/hex.h"
+#include "../../nostril/base64.h"
+#include "../../nostril/aes.h"
+#include "../../nostril/sha256.h"
+#include "../../nostril/random.h"
+#include "../../nostril/proof.h"
 
-#include "../../async/async.h"
+#include "../../async.h/async/async.h"
 
 
 int main(int argc, const char * argv[]) {

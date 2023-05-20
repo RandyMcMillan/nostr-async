@@ -34,5 +34,5 @@ async/.DS_Store
 async/build
 .vscode
 
-async.h.xcodeproj/xcuserdata
-async.h.xcodeproj/project.xcworkspace/xcuserdata
+nostr-async.h.xcodeproj/xcuserdata
+nostr-async.h.xcodeproj/project.xcworkspace/xcuserdata

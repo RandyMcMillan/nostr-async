@@ -35,6 +35,15 @@ async/build
 .vscode
 
 nostr-async.h.xcodeproj/xcuserdata
+nostril.xcodeproj/xcuserdata/
+async.h.xcodeproj/xcuserdata/
+
 nostr-async.h.xcodeproj/project.xcworkspace/xcuserdata
 nostril.xcodeproj/project.xcworkspace/xcuserdata/
 async.h.xcodeproj/project.xcworkspace/xcuserdata/
+nostr-async.h.xcodeproj/project.xcworkspace/xcuserdata
+nostr-async/nostr-async.xcodeproj/xcuserdata/
+
+nostril.xcodeproj/xcuserdata/git.xcuserdatad/xcschemes/xcschememanagement.plist
+
+nostr-async.xcworkspace/xcuserdata

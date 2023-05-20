@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:nostr-async/nostr-async.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:nostril.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:async.h.xcodeproj">
+   </FileRef>
+</Workspace>

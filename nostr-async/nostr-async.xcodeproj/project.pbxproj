@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2F9BFF2A186DCE00F02A38 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BF62A186DB700F02A38 /* aes.h */; };
+		4B2F9C012A186DD300F02A38 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BFB2A186DB800F02A38 /* base64.h */; };
+		4B2F9C032A186DD700F02A38 /* compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BF92A186DB700F02A38 /* compiler.h */; };
+		4B2F9C052A186DDC00F02A38 /* cursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BF82A186DB700F02A38 /* cursor.h */; };
+		4B2F9C062A186DDC00F02A38 /* hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BF32A186DB700F02A38 /* hex.h */; };
+		4B2F9C072A186DDC00F02A38 /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BF52A186DB700F02A38 /* endian.h */; };
+		4B2F9C082A186DDC00F02A38 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BF42A186DB700F02A38 /* random.h */; };
+		4B2F9C092A186DDC00F02A38 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BFA2A186DB700F02A38 /* sha256.h */; };
+		4B2F9C0A2A186DDC00F02A38 /* proof.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BF72A186DB700F02A38 /* proof.h */; };
+		4B2F9C0B2A186DDC00F02A38 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2F9BFC2A186DB800F02A38 /* config.h */; };
 		4BDBB9412A185E75000FD3C8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB9402A185E75000FD3C8 /* main.c */; };
 		4BDBB9D22A186884000FD3C8 /* libsecp256k1.a in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB94F2A1861C1000FD3C8 /* libsecp256k1.a */; };
 		4BDBB9D32A186892000FD3C8 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB9C02A1867F7000FD3C8 /* secp256k1.h */; };
@@ -30,6 +40,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B2F9BF32A186DB700F02A38 /* hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hex.h; sourceTree = "<group>"; };
+		4B2F9BF42A186DB700F02A38 /* random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		4B2F9BF52A186DB700F02A38 /* endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
+		4B2F9BF62A186DB700F02A38 /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		4B2F9BF72A186DB700F02A38 /* proof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proof.h; sourceTree = "<group>"; };
+		4B2F9BF82A186DB700F02A38 /* cursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cursor.h; sourceTree = "<group>"; };
+		4B2F9BF92A186DB700F02A38 /* compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		4B2F9BFA2A186DB700F02A38 /* sha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		4B2F9BFB2A186DB800F02A38 /* base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		4B2F9BFC2A186DB800F02A38 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		4BDBB93D2A185E75000FD3C8 /* nostr-async */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "nostr-async"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDBB9402A185E75000FD3C8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4BDBB94F2A1861C1000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libsecp256k1.a; path = ../libsecp256k1.a; sourceTree = SOURCE_ROOT; };
@@ -89,6 +109,16 @@
 		4BDBB9BF2A1867F7000FD3C8 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				4B2F9BF62A186DB700F02A38 /* aes.h */,
+				4B2F9BFB2A186DB800F02A38 /* base64.h */,
+				4B2F9BF92A186DB700F02A38 /* compiler.h */,
+				4B2F9BFC2A186DB800F02A38 /* config.h */,
+				4B2F9BF82A186DB700F02A38 /* cursor.h */,
+				4B2F9BF52A186DB700F02A38 /* endian.h */,
+				4B2F9BF32A186DB700F02A38 /* hex.h */,
+				4B2F9BF72A186DB700F02A38 /* proof.h */,
+				4B2F9BF42A186DB700F02A38 /* random.h */,
+				4B2F9BFA2A186DB700F02A38 /* sha256.h */,
 				4BDBB9C02A1867F7000FD3C8 /* secp256k1.h */,
 				4BDBB9C12A1867F7000FD3C8 /* secp256k1_ecdh.h */,
 				4BDBB9C22A1867F7000FD3C8 /* secp256k1_extrakeys.h */,
@@ -107,12 +137,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2F9C062A186DDC00F02A38 /* hex.h in Headers */,
 				4BDBB9DD2A1868AE000FD3C8 /* secp256k1_ecdh.h in Headers */,
 				4BDBB9DB2A1868A9000FD3C8 /* secp256k1_preallocated.h in Headers */,
 				4BDBB9D92A1868A0000FD3C8 /* secp256k1_schnorrsig.h in Headers */,
+				4B2F9C0B2A186DDC00F02A38 /* config.h in Headers */,
+				4B2F9C012A186DD300F02A38 /* base64.h in Headers */,
+				4B2F9C072A186DDC00F02A38 /* endian.h in Headers */,
+				4B2F9C0A2A186DDC00F02A38 /* proof.h in Headers */,
 				4BDBB9D72A18689A000FD3C8 /* secp256k1_recovery.h in Headers */,
+				4B2F9C092A186DDC00F02A38 /* sha256.h in Headers */,
 				4BDBB9D52A186897000FD3C8 /* secp256k1_extrakeys.h in Headers */,
+				4B2F9C082A186DDC00F02A38 /* random.h in Headers */,
+				4B2F9C032A186DD700F02A38 /* compiler.h in Headers */,
 				4BDBB9D32A186892000FD3C8 /* secp256k1.h in Headers */,
+				4B2F9C052A186DDC00F02A38 /* cursor.h in Headers */,
+				4B2F9BFF2A186DCE00F02A38 /* aes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

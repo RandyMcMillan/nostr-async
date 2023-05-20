@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BAFCA652A19794000C3135E /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8C52A185126000FD3C8 /* random.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BAFCA672A19794B00C3135E /* proof.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8C12A185119000FD3C8 /* proof.h */; };
+		4BAFCA6C2A19798100C3135E /* hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8BD2A185108000FD3C8 /* hex.h */; };
 		4BDBB8AB2A185073000FD3C8 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8A92A185073000FD3C8 /* aes.c */; };
 		4BDBB8B22A1850D7000FD3C8 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8B12A1850D7000FD3C8 /* base64.c */; };
-		4BDBB8B62A1850EE000FD3C8 /* cursor.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8B52A1850EE000FD3C8 /* cursor.h */; };
-		4BDBB8BA2A1850FA000FD3C8 /* endian.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8B92A1850FA000FD3C8 /* endian.h */; };
-		4BDBB8BE2A185108000FD3C8 /* hex.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8BD2A185108000FD3C8 /* hex.h */; };
-		4BDBB8C22A185119000FD3C8 /* proof.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8C12A185119000FD3C8 /* proof.h */; };
-		4BDBB8C62A185126000FD3C8 /* random.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8C52A185126000FD3C8 /* random.h */; };
 		4BDBB8CA2A185135000FD3C8 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8C92A185135000FD3C8 /* sha256.c */; };
 		4BDBB8CE2A185146000FD3C8 /* nostril.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB8CD2A185146000FD3C8 /* nostril.c */; };
 		4BDBB8FC2A185372000FD3C8 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8DB2A1851E6000FD3C8 /* secp256k1.h */; };
@@ -24,16 +22,6 @@
 		4BDBB9012A185372000FD3C8 /* secp256k1_schnorrsig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBB8E02A1851E6000FD3C8 /* secp256k1_schnorrsig.h */; };
 		4BDBB9212A1856E7000FD3C8 /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4BDBB8912A184E3C000FD3C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BDBB8732A184C51000FD3C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BDBB88A2A184E22000FD3C8;
-			remoteInfo = secp256k1;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4BDBB8792A184C51000FD3C8 /* CopyFiles */ = {
@@ -49,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		4BDBB87B2A184C51000FD3C8 /* nostril */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nostril; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsecp256k1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDBB8942A184E70000FD3C8 /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1.a; sourceTree = "<group>"; };
 		4BDBB8A92A185073000FD3C8 /* aes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aes.c; sourceTree = "<group>"; };
 		4BDBB8AA2A185073000FD3C8 /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
@@ -94,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				4BDBB87B2A184C51000FD3C8 /* nostril */,
-				4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +132,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BAFCA652A19794000C3135E /* random.h in Headers */,
+				4BAFCA6C2A19798100C3135E /* hex.h in Headers */,
+				4BAFCA672A19794B00C3135E /* proof.h in Headers */,
 				4BDBB8FC2A185372000FD3C8 /* secp256k1.h in Headers */,
 				4BDBB8FD2A185372000FD3C8 /* secp256k1_ecdh.h in Headers */,
 				4BDBB8FE2A185372000FD3C8 /* secp256k1_extrakeys.h in Headers */,
@@ -163,6 +152,7 @@
 			buildConfigurationList = 4BDBB8822A184C51000FD3C8 /* Build configuration list for PBXNativeTarget "nostril" */;
 			buildPhases = (
 				4BDBB8FB2A185360000FD3C8 /* Headers */,
+				4BAFCA632A1978DD00C3135E /* make libsecp256k1.a */,
 				4BDBB8772A184C51000FD3C8 /* Sources */,
 				4BDBB8782A184C51000FD3C8 /* Frameworks */,
 				4BDBB8792A184C51000FD3C8 /* CopyFiles */,
@@ -170,28 +160,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				4BDBB8922A184E3C000FD3C8 /* PBXTargetDependency */,
 			);
 			name = nostril;
 			productName = nostril;
 			productReference = 4BDBB87B2A184C51000FD3C8 /* nostril */;
 			productType = "com.apple.product-type.tool";
-		};
-		4BDBB88A2A184E22000FD3C8 /* secp256k1 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BDBB88C2A184E22000FD3C8 /* Build configuration list for PBXNativeTarget "secp256k1" */;
-			buildPhases = (
-				4BDBB89B2A184EC7000FD3C8 /* $MAKE libsecp256k1.a
- */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = secp256k1;
-			productName = secp256k1;
-			productReference = 4BDBB88B2A184E22000FD3C8 /* libsecp256k1.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,9 +175,6 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					4BDBB87A2A184C51000FD3C8 = {
-						CreatedOnToolsVersion = 12.4;
-					};
-					4BDBB88A2A184E22000FD3C8 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -223,14 +193,12 @@
 			projectRoot = "";
 			targets = (
 				4BDBB87A2A184C51000FD3C8 /* nostril */,
-				4BDBB88A2A184E22000FD3C8 /* secp256k1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4BDBB89B2A184EC7000FD3C8 /* $MAKE libsecp256k1.a
- */ = {
+		4BAFCA632A1978DD00C3135E /* make libsecp256k1.a */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,7 +207,7 @@
 			);
 			inputPaths = (
 			);
-			name = "$MAKE libsecp256k1.a\n";
+			name = "make libsecp256k1.a";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -257,25 +225,12 @@
 			files = (
 				4BDBB8CE2A185146000FD3C8 /* nostril.c in Sources */,
 				4BDBB8CA2A185135000FD3C8 /* sha256.c in Sources */,
-				4BDBB8C62A185126000FD3C8 /* random.h in Sources */,
-				4BDBB8C22A185119000FD3C8 /* proof.h in Sources */,
-				4BDBB8BE2A185108000FD3C8 /* hex.h in Sources */,
-				4BDBB8BA2A1850FA000FD3C8 /* endian.h in Sources */,
-				4BDBB8B62A1850EE000FD3C8 /* cursor.h in Sources */,
 				4BDBB8B22A1850D7000FD3C8 /* base64.c in Sources */,
 				4BDBB8AB2A185073000FD3C8 /* aes.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4BDBB8922A184E3C000FD3C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BDBB88A2A184E22000FD3C8 /* secp256k1 */;
-			targetProxy = 4BDBB8912A184E3C000FD3C8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4BDBB8802A184C51000FD3C8 /* Debug */ = {
@@ -421,38 +376,6 @@
 			};
 			name = Release;
 		};
-		4BDBB88D2A184E22000FD3C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QP9MSC9X74;
-				EXECUTABLE_PREFIX = lib;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = NO;
-			};
-			name = Debug;
-		};
-		4BDBB88E2A184E22000FD3C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QP9MSC9X74;
-				EXECUTABLE_PREFIX = lib;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -470,15 +393,6 @@
 			buildConfigurations = (
 				4BDBB8832A184C51000FD3C8 /* Debug */,
 				4BDBB8842A184C51000FD3C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4BDBB88C2A184E22000FD3C8 /* Build configuration list for PBXNativeTarget "secp256k1" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4BDBB88D2A184E22000FD3C8 /* Debug */,
-				4BDBB88E2A184E22000FD3C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

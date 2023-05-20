@@ -52,7 +52,7 @@ libsecp256k1.a: deps/secp256k1/.libs/libsecp256k1.a
 	@echo "cc $<"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-nostril: $(HEADERS) $(OBJS) $(ARS)## make nostril binary
+nostril: $(HEADERS) $(OBJS) $(ARS)## 	make nostril binary
 	$(CC) $(CFLAGS) $(OBJS) $(ARS) -o $@
 
 install: all## install docs/nostril.1 nostril nostril-query

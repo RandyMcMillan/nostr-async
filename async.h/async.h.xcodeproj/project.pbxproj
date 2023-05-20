@@ -34,9 +34,10 @@
 		4B0372B22A1830CF00CBB0A6 /* example-buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "example-buffer.c"; path = "async/example-buffer.c"; sourceTree = "<group>"; };
 		4B0372B32A1830CF00CBB0A6 /* example-codelock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "example-codelock.c"; path = "async/example-codelock.c"; sourceTree = "<group>"; };
 		4B0372B82A1830E800CBB0A6 /* async-sem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "async-sem.h"; path = "async/async-sem.h"; sourceTree = "<group>"; };
-		4B0372BE2A18315000CBB0A6 /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = main; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0372BE2A18315000CBB0A6 /* async */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = async; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0372DB2A18333100CBB0A6 /* examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = examples.h; path = async/examples.h; sourceTree = "<group>"; };
 		4B0372DC2A18334600CBB0A6 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = async/main.c; sourceTree = "<group>"; };
+		4B61D1952A194BA400D4D037 /* main.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = main.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		4B0372962A182CDD00CBB0A6 = {
 			isa = PBXGroup;
 			children = (
+				4B61D1952A194BA400D4D037 /* main.entitlements */,
 				4B0372DC2A18334600CBB0A6 /* main.c */,
 				4B0372DB2A18333100CBB0A6 /* examples.h */,
 				4B0372B82A1830E800CBB0A6 /* async-sem.h */,
@@ -61,31 +63,23 @@
 				4B0372B12A1830CF00CBB0A6 /* example-small.c */,
 				4B0372AB2A18308700CBB0A6 /* async.h */,
 				4B0372A02A182CDE00CBB0A6 /* Products */,
-				4B0372E02A18338B00CBB0A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4B0372A02A182CDE00CBB0A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B0372BE2A18315000CBB0A6 /* main */,
+				4B0372BE2A18315000CBB0A6 /* async */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4B0372E02A18338B00CBB0A6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B0372BD2A18315000CBB0A6 /* main */ = {
+		4B0372BD2A18315000CBB0A6 /* async */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B0372C22A18315000CBB0A6 /* Build configuration list for PBXNativeTarget "main" */;
+			buildConfigurationList = 4B0372C22A18315000CBB0A6 /* Build configuration list for PBXNativeTarget "async" */;
 			buildPhases = (
 				4B0372BA2A18315000CBB0A6 /* Sources */,
 				4B0372BB2A18315000CBB0A6 /* Frameworks */,
@@ -95,9 +89,9 @@
 			);
 			dependencies = (
 			);
-			name = main;
+			name = async;
 			productName = main;
-			productReference = 4B0372BE2A18315000CBB0A6 /* main */;
+			productReference = 4B0372BE2A18315000CBB0A6 /* async */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B0372BD2A18315000CBB0A6 /* main */,
+				4B0372BD2A18315000CBB0A6 /* async */,
 			);
 		};
 /* End PBXProject section */
@@ -263,10 +257,12 @@
 		4B0372C32A18315000CBB0A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = main.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "async/example-small.c async/example-codelock.c async/main.c async/async.h async/examples.h async/example-buffer.c";
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = async.h.bitcoincore.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -274,10 +270,12 @@
 		4B0372C42A18315000CBB0A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = main.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "async/example-small.c async/example-codelock.c async/main.c async/async.h async/examples.h async/example-buffer.c";
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = async.h.bitcoincore.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -294,7 +292,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B0372C22A18315000CBB0A6 /* Build configuration list for PBXNativeTarget "main" */ = {
+		4B0372C22A18315000CBB0A6 /* Build configuration list for PBXNativeTarget "async" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B0372C32A18315000CBB0A6 /* Debug */,

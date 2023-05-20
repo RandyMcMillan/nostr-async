@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B0372BD2A18315000CBB0A6"
-               BuildableName = "main"
-               BlueprintName = "main"
+               BuildableName = "async"
+               BlueprintName = "async"
                ReferencedContainer = "container:async.h.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B0372BD2A18315000CBB0A6"
-            BuildableName = "main"
-            BlueprintName = "main"
+            BuildableName = "async"
+            BlueprintName = "async"
             ReferencedContainer = "container:async.h.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B0372BD2A18315000CBB0A6"
-            BuildableName = "main"
-            BlueprintName = "main"
+            BuildableName = "async"
+            BlueprintName = "async"
             ReferencedContainer = "container:async.h.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
